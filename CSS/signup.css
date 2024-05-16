@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Courgette&family=Pacifico&family=Satisfy&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(45deg,green,yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#containerBgImg{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+}
+.div{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-image: linear-gradient(90deg,aqua,hotpink);
+}
+#div1{
+    position: absolute;
+    transform: rotate(10deg) rotateY(180deg);
+    filter: drop-shadow(2px 2px 1px black);
+    animation: divi1 10s infinite both alternate ease-in-out;
+}
+#div2{
+    position: absolute;
+    right: 3vw;
+    transform: rotate(10deg) rotateY(180deg);
+    filter: drop-shadow(2px 2px 1px black);
+    animation: divi2 15s infinite both reverse ease-in;
+}
+#div3{
+    position: absolute;
+    bottom: 3vw;
+    transform: rotate(20deg) rotateY(0deg);
+    filter: drop-shadow(2px 2px 1px black);
+    animation: divi3 20s infinite both alternate-reverse linear;
+}
+#div4{
+    position: absolute;
+    right: 3vw;
+    bottom: 3vw;
+    transform: rotate(15deg) rotateY(180deg);
+    filter: drop-shadow(2px 2px 1px black);
+    animation: divi4 10s infinite both alternate-reverse linear;
+}
+@keyframes divi1{
+    0%{
+        transform: translate(0px,0px) rotateY(180deg);
+    }
+    25%{
+        transform: translate(400px,200px) rotateY(180deg);
+    }
+    50%{
+        transform: translate(600px,150px) rotateY(180deg);
+    }
+    75%{
+        transform: translate(0px,650px) rotateY(180deg);
+    }
+    100%{
+        transform: translate(600px,650px) rotateY(180deg);
+    }
+}
+@keyframes divi2{
+    0%{
+        transform: translate(0px,0px) rotateY(180deg);
+    }
+    25%{
+        transform: translate(-400px,200px) rotateY(180deg);
+    }
+    50%{
+        transform: translate(-600px,-150px) rotateY(180deg);
+    }
+    75%{
+        transform: translate(0px,650px) rotateY(180deg);
+    }
+    100%{
+        transform: translate(600px,450px) rotateY(180deg);
+    }
+}
+@keyframes divi3{
+    0%{
+        transform: translate(0px,0px) rotateY(180deg);
+    }
+    25%{
+        transform: translate(400px,-200px) rotateY(180deg);
+    }
+    50%{
+        transform: translate(600px,-150px) rotateY(180deg);
+    }
+    75%{
+        transform: translate(0px,-450px) rotateY(180deg);
+    }
+    100%{
+        transform: translate(100px,-350px) rotateY(180deg);
+    }
+}
+@keyframes divi4{
+    0%{
+        transform: translate(0px,0px) rotateY(180deg);
+    }
+    25%{
+        transform: translate(-400px,-200px) rotateY(180deg);
+    }
+    50%{
+        transform: translate(-600px,-150px) rotateY(180deg);
+    }
+    75%{
+        transform: translate(0px,-650px) rotateY(180deg);
+    }
+    100%{
+        transform: translate(-600px,650px) rotateY(180deg);
+    }
+}
+#loginContainer{
+    width: 90vw;
+    height: 40vw;
+    background-color: rgba(0, 0, 0, 0.823);
+    border-radius: 1vw;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    box-shadow: 0.1vw 0.1vw 0.2vw black;
+    display: flex;
+}
+#videoTag{
+    width: 40%;
+    height: 100%;
+    border-radius: 1vw 0vw 0vw 1vw;
+    /* background-color: red; */
+    overflow: hidden;
+}
+#video{
+    position: relative;
+    bottom: 10vw;
+    width: 100%;
+    /* height: 100%; */
+    overflow: hidden;
+    border-radius: 1vw 0vw 0vw 1vw;
+}
+#signup{
+    width: 60%;
+    height: 100%;
+    background-color: white;
+    border-radius: 0vw 1vw 1vw 0vw;
+}
+#signuptext{
+    margin-left: 35%;
+    color: blue;
+    text-shadow: 2px 2px 2px black;
+    font-family: "Briem Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 4vw;
+}
+#names{
+    display: flex;
+    justify-content: space-evenly;
+}
+#fn{
+    width: 40%;
+    height: 2vw;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    border-bottom: 0.3vw solid white;
+    color: white;
+    letter-spacing: 1vw;
+    font-size: 1vw;
+    box-shadow: 0px 5px 2px black;
+}
+#ln{
+    width: 40%;
+    height: 2vw;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    border-bottom: 0.3vw solid white;
+    color: white;
+    letter-spacing: 1vw;
+    font-size: 1vw;
+    box-shadow: 0px 5px 2px black;
+}
+#fn::placeholder,#ln::placeholder{
+    color: black;
+    letter-spacing: 0.7vw;
+    font-size: 1vw;
+}
+#email{
+    width: 90%;
+    height: 2vw;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    border-bottom: 0.3vw solid white;
+    color: white;
+    letter-spacing: 1vw;
+    font-size: 1vw;
+    box-shadow: 0px 5px 2px black;
+    margin-left: 4%;
+}
+#password{
+    width: 90%;
+    height: 2vw;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    border-bottom: 0.3vw solid white;
+    color: white;
+    letter-spacing: 1vw;
+    font-size: 1vw;
+    box-shadow: 0px 5px 2px black;
+    margin-left: 4%;
+}
+#cpassword{
+    width: 90%;
+    height: 2vw;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    border-bottom: 0.3vw solid white;
+    color: white;
+    letter-spacing: 1vw;
+    font-size: 1vw;
+    box-shadow: 0px 5px 2px black;
+    margin-left: 4%;
+}
+#email::placeholder,#password::placeholder,#cpassword::placeholder{
+    color: black;
+    letter-spacing: 0.7vw;
+    font-size: 1vw;
+}
+#gen,#add,#phone{
+    font-size: 2vw;
+    color:plum;
+    text-shadow: 0px 2px 2px plum;
+    margin-left: 4%;
+}
+#space{
+    display: flex;
+    justify-content: space-evenly;
+    color: black;
+}
+textarea{
+    width: 90%;
+    height: 50px;
+    margin-left: 4%;
+}
+#in{
+    width: 90%;
+    height: 20px;
+    margin-left: 4%;
+}
+#signup1{
+    width: 40%;
+    height: 3vw;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    background-color: royalblue;
+    border: none;
+    outline: none;
+    font-size: 2vw;
+    letter-spacing: 1vw;
+    font-weight: bold;
+    color: white;
+    margin-left: 30%;
+}
+#signup1:hover{
+    animation: buttonAnimation 0.5s 1 both alternate;
+    cursor: pointer;
+}
+@keyframes buttonAnimation{
+    0%,100%{
+        transform: rotate(0deg) skew(0deg,0deg);
+    }
+    25%{
+        transform: rotate(10deg) skew(5deg,10deg);
+    }
+    50%{
+        transform: rotate(-10deg) skew(-5deg,-10deg);
+    }
+    75%{
+        transform: rotate(15deg) skew(7deg,15deg);
+    }
+}
+a{
+    color: blue;
+    text-decoration: none;
+    letter-spacing: 0.5vw;
+    font-size: 1.5vw;
+    margin-left: 14vw;
+}

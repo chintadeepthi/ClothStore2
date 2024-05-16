@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Courgette&family=Pacifico&family=Satisfy&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(180deg,teal,black);
+}
+#headerVid{
+    display: none;
+}
+#containerHeader{
+    width: 100%;
+    height: 20vh;
+    /* background-color: aqua; */
+    background-image: url(../Asset/image/dresses3[1].jpg);
+    background-size: 100% 100%;
+    filter: grayscale(100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 5px 5px black;
+}
+.pageName{
+    position: absolute;
+    z-index: 2;
+    font-size: 3vw;
+    letter-spacing: 3vw;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    font-family: "Briem Hand", cursive;
+    font-optical-sizing: auto;
+}
+#anchor{
+    color: blue;
+    text-decoration: none;
+    letter-spacing: 0.5vw;
+    font-size: 1.5vw;
+    margin-left: 15%;
+}
+#top{
+    width: 5vw;
+    height: 5vw;
+    background-color: white;
+    color: rgb(0, 95, 95);
+    position: fixed;
+    bottom: 5vw;
+    right: 1vw;
+    font-size: 3vw;
+    display: flex;
+    z-index: 15;
+    justify-content: center;
+    align-items: center;
+    border-radius: 63% 37% 70% 30% / 30% 48% 52% 70% ;
+    box-shadow: 5px 5px 5px black;
+    cursor: pointer;
+}
+#top:hover{
+    animation: arrowAnimation 0.2s alternate 4 both ease-in-out;
+}
+@keyframes arrowAnimation{
+    from{
+        transform: translate(0vw,0vw);
+    }
+    to{
+        transform: translate(0vw,-4vw);
+    }
+}

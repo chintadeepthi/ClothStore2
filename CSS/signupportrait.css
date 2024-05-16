@@ -1,0 +1,41 @@
+#loginContainer{
+    left: 10%;
+    top: 32%;
+    width: 90%;
+    height: 80vw;
+    overflow: hidden;
+} 
+#area{
+    height: 3vw;
+}
+#in{
+    height: 2vw;
+}
+#signuptext{
+    margin-top: 2vw;
+}
+#signup1{
+    position: absolute;
+    bottom: 45px;
+    right: 50px;
+    width: 25vw;
+}
+#anchor{
+    position: absolute;
+    bottom: 20px;
+    right: 42px;
+}
+#videoTag{
+    width: 40%;
+    height: 100%;
+    border-radius: 1vw 0vw 0vw 1vw;
+    position: relative;
+}
+#video{
+    position: absolute;
+    left: -40px;
+    bottom: -35px;
+    width: 160%;
+    height: 150%;
+    border-radius: 1vw 0vw 0vw 1vw;
+}
